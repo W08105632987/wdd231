@@ -1,0 +1,140 @@
+/* Larger Screen Styles - 640px and up */
+@media screen and (min-width: 640px) {
+
+    /* Header */
+    .site-name {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Navigation - Horizontal Layout */
+    .main-nav {
+        max-height: none;
+        overflow: visible;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+        background-color: var(--secondary-color);
+        border-radius: 8px;
+        padding: 0.5rem;
+    }
+
+    .nav-list li {
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .nav-list a {
+        padding: 0.75rem 2rem;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+
+    .nav-list a:hover {
+        padding-left: 2rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    .nav-list a.active {
+        background-color: transparent;
+        color: white;
+        font-weight: 500;
+    }
+
+    /* Main Content */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    /* Course Controls - side by side on larger screens */
+    .course-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Course Cards - 2 columns */
+    .courses-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Sections side-by-side layout option */
+    .projects-section,
+    .about-section {
+        padding: 2rem;
+    }
+}
+
+/* Extra Large Screens - 1024px and up */
+@media screen and (min-width: 1024px) {
+
+    /* Course Cards - 3 columns */
+    .courses-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Navigation hover enhancement */
+    .nav-list a {
+        position: relative;
+    }
+
+    .nav-list a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-list a:hover::after {
+        width: 80%;
+    }
+
+    .nav-list a.active::after {
+        width: 80%;
+    }
+
+    /* Course cards enhanced hover */
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+}

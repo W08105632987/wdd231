@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development I course home page showcasing web development projects and completed courses.">
+    <meta name="author" content="Your Name">
+    <title>WDD 231 - Web Frontend Development I</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="WDD Logo" class="logo">
+            <span class="site-name">Okechuwku Wisdom Chidera</span>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-controls">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn active" data-filter="CSE">CSE</button>
+                    <button class="filter-btn active" data-filter="WDD">WDD</button>
+                </div>
+                <div class="course-legend">
+                    <div class="legend-item">
+                        <div class="legend-box completed-box"></div>
+                        <span>Completed</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box incomplete-box"></div>
+                        <span>Not Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div id="courses-container" class="courses-container"></div>
+            <div class="credits-info">
+                <p class="credits-total">Total Credits Required: <span id="total-credits">0</span></p>
+                <p class="credits-acquired">Credits Acquired: <span id="acquired-credits">0</span></p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <p>Throughout this course, you will develop various web projects that demonstrate your frontend development skills. Projects include a Chamber of Commerce website and a final capstone project.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>About This Course</h2>
+            <p>WDD 231 - Web Frontend Development I focuses on advanced HTML, CSS, and JavaScript techniques. You'll learn responsive design, accessibility standards, and modern web development practices.</p>
+        </section>
+    </main>
+
+    <footer>
+  <div class="footer-content">
+    <div class="social-links">
+      <a href="https://github.com/W08105632987" target="_blank" rel="noopener" aria-label="GitHub Profile">
+        <img src="images/github.svg" alt="GitHub Logo" width="24" height="24">
+      </a>
+
+      <a href="https://www.linkedin.com/in/okechukwu-wisdom-ba718737a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <img src="images/linkedin.svg" alt="LinkedIn Logo" width="24" height="24">
+      </a>
+
+      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" aria-label="Twitter Profile">
+        <img src="images/twitter.svg" alt="Twitter Logo" width="24" height="24">
+      </a>
+    </div>
+
+    <p>&copy; <span id="currentyear"></span> | Okechukwu Wisdom Chidera | Nigeria</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+
+</body>
+</html>
