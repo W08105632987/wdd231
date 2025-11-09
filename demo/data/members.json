@@ -1,0 +1,103 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Tech Innovators Inc",
+      "address": "123 Silicon Valley Blvd, Port Harcourt, Rivers State",
+      "phone": "+234 803 456 7890",
+      "website": "https://techinnovators.com",
+      "image": "tech-innovators.jpg",
+      "membershipLevel": "Gold",
+      "industry": "Technology",
+      "description": "Leading provider of innovative tech solutions for businesses across Nigeria."
+    },
+    {
+      "id": 2,
+      "name": "Green Earth Logistics",
+      "address": "456 Eco Drive, Port Harcourt, Rivers State",
+      "phone": "+234 805 123 4567",
+      "website": "https://greenearthlogistics.com",
+      "image": "green-earth.jpg",
+      "membershipLevel": "Silver",
+      "industry": "Logistics",
+      "description": "Sustainable logistics and transportation services committed to environmental responsibility."
+    },
+    {
+      "id": 3,
+      "name": "Royal Palace Restaurant",
+      "address": "789 Garden City Road, Port Harcourt, Rivers State",
+      "phone": "+234 807 890 1234",
+      "website": "https://royalpalacerestaurant.com",
+      "image": "royal-palace.jpg",
+      "membershipLevel": "Bronze",
+      "industry": "Hospitality",
+      "description": "Authentic Nigerian cuisine with a modern twist, serving the community for over 15 years."
+    },
+    {
+      "id": 4,
+      "name": "Apex Financial Services",
+      "address": "321 Trans Amadi Industrial Layout, Port Harcourt, Rivers State",
+      "phone": "+234 809 234 5678",
+      "website": "https://apexfinancial.com",
+      "image": "apex-financial.jpg",
+      "membershipLevel": "Gold",
+      "industry": "Finance",
+      "description": "Comprehensive financial planning and investment management for individuals and businesses."
+    },
+    {
+      "id": 5,
+      "name": "BuildRight Construction",
+      "address": "654 Ada George Road, Port Harcourt, Rivers State",
+      "phone": "+234 802 567 8901",
+      "website": "https://buildrightconstruction.com",
+      "image": "buildright.jpg",
+      "membershipLevel": "Silver",
+      "industry": "Construction",
+      "description": "Quality construction services specializing in residential and commercial projects."
+    },
+    {
+      "id": 6,
+      "name": "HealthPlus Medical Center",
+      "address": "987 Aba Road, Port Harcourt, Rivers State",
+      "phone": "+234 806 345 6789",
+      "website": "https://healthplusmedical.com",
+      "image": "healthplus.jpg",
+      "membershipLevel": "Gold",
+      "industry": "Healthcare",
+      "description": "State-of-the-art medical facility providing comprehensive healthcare services."
+    },
+    {
+      "id": 7,
+      "name": "EduPrime Academy",
+      "address": "147 Old Aba Road, Port Harcourt, Rivers State",
+      "phone": "+234 808 456 7890",
+      "website": "https://eduprimeacademy.com",
+      "image": "eduprime.jpg",
+      "membershipLevel": "Bronze",
+      "industry": "Education",
+      "description": "Excellence in education from nursery to secondary level with modern learning facilities."
+    },
+    {
+      "id": 8,
+      "name": "PowerGen Energy Solutions",
+      "address": "258 Rumuola Road, Port Harcourt, Rivers State",
+      "phone": "+234 804 678 9012",
+      "website": "https://powergenenergy.com",
+      "image": "powergen.jpg",
+      "membershipLevel": "Gold",
+      "industry": "Energy",
+      "description": "Renewable energy solutions and power generation systems for homes and businesses."
+    },
+    {
+      "id": 9,
+      "name": "FreshMart Supermarket",
+      "address": "369 Stadium Road, Port Harcourt, Rivers State",
+      "phone": "+234 801 789 0123",
+      "website": "https://freshmartsupermarket.com",
+      "image": "freshmart.jpg",
+      "membershipLevel": "Silver",
+      "industry": "Retail",
+      "description": "Your one-stop shop for fresh groceries, household items, and quality products."
+    }
+  ]
+}

@@ -69,6 +69,22 @@
         padding: 2rem;
     }
 
+    /* About Me Section - Side by Side Layout */
+    .about-me-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .profile-image-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-me-text {
+        flex: 1;
+    }
+
     /* Course Controls - side by side on larger screens */
     .course-controls {
         flex-direction: row;
@@ -91,6 +107,25 @@
 
 /* Extra Large Screens - 1024px and up */
 @media screen and (min-width: 1024px) {
+
+    /* About Me Section - Enhanced for Large Screens */
+    .about-me-section {
+        padding: 3rem;
+    }
+
+    .about-me-content {
+        gap: 4rem;
+    }
+
+    .profile-image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-me-text p {
+        font-size: 1.05rem;
+        line-height: 1.9;
+    }
 
     /* Course Cards - 3 columns */
     .courses-container {

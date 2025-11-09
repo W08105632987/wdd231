@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Okechukwu Wisdom Chidera">
+  <meta name="description" content="Home page for the fictional Chamber of Commerce website project for WDD 231.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce | WDD 231 Project">
+  <meta property="og:description" content="Explore local businesses, events, and opportunities with our Chamber of Commerce project site.">
+  <meta property="og:image" content="https://yourusername.github.io/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/chamber/">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chamber of Commerce | WDD 231 Project">
+  <meta name="twitter:description" content="Explore local businesses, events, and opportunities with our Chamber of Commerce project site.">
+  <meta name="twitter:image" content="https://yourusername.github.io/chamber/images/og-image.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <title>Chamber of Commerce | Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Chamber logo" class="logo">
+      <h1>Chamber of Commerce</h1>
+      <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+    </div>
+
+    <nav id="navMenu" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Our Chamber</h2>
+      <p>Connecting local businesses and fostering community growth.</p>
+      <a href="join.html" class="cta-button">Join Now</a>
+    </section>
+
+    <!-- Directory Section with View Toggle -->
+    <section class="directory-controls">
+      <h2>Member Directory</h2>
+      <div class="view-toggle">
+        <button id="gridViewBtn" class="view-btn active" aria-label="Grid view">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+        <button id="listViewBtn" class="view-btn" aria-label="List view">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Member Cards Container -->
+    <section id="memberCards" class="member-container grid-view">
+      <!-- Member cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Chamber of Commerce | Okechukwu Wisdom Chidera | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  
+  <script src="scripts/directory.js"></script>
+</body>
+</html>

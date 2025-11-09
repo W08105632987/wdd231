@@ -1,0 +1,202 @@
+/* ============================================
+   LARGE.CSS - TABLET & DESKTOP STYLES
+   ABUJA CHAMBER OF COMMERCE
+   Media Query: 640px and above
+   ============================================ */
+
+@media (min-width: 640px) {
+
+    /* ============================================
+       HEADER - DESKTOP
+       ============================================ */
+
+    .logo-icon {
+        font-size: 2.5rem;
+    }
+
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo-text p {
+        font-size: 0.875rem;
+    }
+
+    /* Navigation - Desktop */
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        gap: var(--spacing-lg);
+        box-shadow: none;
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    /* ============================================
+       MAIN CONTENT - DESKTOP
+       ============================================ */
+
+    main {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .directory-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .directory-header p {
+        font-size: 1.125rem;
+        max-width: 600px;
+    }
+
+    .view-btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 1rem;
+    }
+
+    .view-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+
+    /* ============================================
+       DIRECTORY CONTAINER - DESKTOP
+       ============================================ */
+
+    /* Grid View - Desktop (Multiple Columns) */
+    .directory-container.grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-lg);
+    }
+
+    /* List View - Desktop (Centered, Constrained Width, NO IMAGES) */
+    .directory-container.list-view {
+        max-width: 800px;
+        margin: 0 auto;
+        gap: var(--spacing-md);
+    }
+
+    /* ============================================
+       MEMBER CARDS - DESKTOP
+       ============================================ */
+
+    .member-card:hover {
+        box-shadow: var(--shadow-hover);
+        transform: translateY(-4px);
+    }
+
+    /* Grid View Cards - Desktop */
+    .grid-view .member-image {
+        height: 200px;
+    }
+
+    .grid-view .member-name {
+        font-size: 1.25rem;
+    }
+
+    .grid-view .member-info {
+        font-size: 0.9rem;
+        display: flex;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    /* List View Cards - Desktop (NO IMAGES, Compact) */
+    .list-view .member-card {
+        display: block;
+        padding: var(--spacing-md);
+    }
+
+    .list-view .member-image {
+        display: none;
+        /* NO images in list view */
+    }
+
+    .list-view .member-content {
+        display: block;
+    }
+
+    .list-view .member-name {
+        font-size: 1.3rem;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .list-view .member-info {
+        font-size: 0.95rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .list-view .member-website {
+        font-size: 0.95rem;
+        margin-top: var(--spacing-sm);
+    }
+
+    /* ============================================
+       FOOTER - DESKTOP
+       ============================================ */
+
+    footer {
+        padding: var(--spacing-xl) 0 var(--spacing-md);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-xl);
+    }
+
+    .footer-info h3,
+    .footer-social h4,
+    .footer-project h4 {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .footer-info p,
+    .footer-project p {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   EXTRA LARGE SCREENS (1024px+)
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+    .directory-header h2 {
+        font-size: 3rem;
+    }
+
+    .directory-header p {
+        font-size: 1.25rem;
+        max-width: 700px;
+    }
+
+    /* Grid View - Wider screens can show more columns */
+    .directory-container.grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    /* List View - Slightly wider on very large screens */
+    .directory-container.list-view {
+        max-width: 900px;
+    }
+}

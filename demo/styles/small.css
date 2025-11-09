@@ -1,0 +1,112 @@
+/* styles/medium.css */
+
+/* ========== MEDIUM SCREENS (min-width: 32rem) ========== */
+@media only screen and (min-width: 32rem) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    /* Navigation: show horizontally */
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        background: transparent;
+        backdrop-filter: none;
+        margin-top: 1rem;
+        box-shadow: none;
+        border: none;
+        animation: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        color: white;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .navigation a::before {
+        display: none;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        background: rgba(255, 255, 255, 0.25);
+        padding: 0.5rem 1rem;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hide menu button since we show nav inline */
+    #menuButton {
+        display: none;
+    }
+
+    /* Main layout adjustments */
+    main {
+        padding: 2rem;
+    }
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    /* Member Grid - 2 columns on medium screens */
+    .member-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* List view on medium screens */
+    .member-container.list-view .member-card {
+        grid-template-columns: auto 1fr auto;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .member-container.list-view .member-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .member-container.list-view .member-info p {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+}

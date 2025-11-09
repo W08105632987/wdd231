@@ -166,6 +166,81 @@ section {
     box-shadow: var(--shadow);
 }
 
+/* About Me Section */
+.about-me-section {
+    background-color: var(--card-bg);
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 6px;
+    background: white;
+}
+
+.profile-image-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color), var(--completed-color), var(--secondary-color));
+    background-size: 300% 300%;
+    z-index: -1;
+    animation: rotate-gradient 3s linear infinite;
+}
+
+@keyframes rotate-gradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    display: block;
+}
+
+.about-me-text {
+    flex: 1;
+}
+
+.about-me-text p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.about-me-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-me-text strong {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
 /* Filter Buttons and Legend */
 .course-controls {
     display: flex;

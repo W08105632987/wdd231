@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Transcorp Hilton Abuja",
+    "address": "1 Aguiyi Ironsi Street, Maitama, Abuja FCT",
+    "phone": "+234 9 461 3000",
+    "email": "info@transcorphilton.com",
+    "website": "https://www.hilton.com/transcorp-abuja",
+    "image": "trancorp.jpg",
+    "membershipLevel": 3,
+    "otherInfo": "Premier luxury hospitality and conference center in Nigeria's capital"
+  },
+  {
+    "name": "Jabi Lake Mall",
+    "address": "Jabi District, Abuja FCT 900108",
+    "phone": "+234 9 291 0000",
+    "email": "info@jabilakemall.com",
+    "website": "https://jabilakemall.com",
+    "image": "jabi.jpg",
+    "membershipLevel": 3,
+    "otherInfo": "Abuja's premier shopping and entertainment destination"
+  },
+  {
+    "name": "Nigerian Communications Commission",
+    "address": "Plot 423, Aguiyi Ironsi Street, Maitama, Abuja",
+    "phone": "+234 9 461 0000",
+    "email": "info@ncc.gov.ng",
+    "website": "https://www.ncc.gov.ng",
+    "image": "ncc.jpg",
+    "membershipLevel": 2,
+    "otherInfo": "Regulating telecommunications and driving digital transformation"
+  },
+  {
+    "name": "Abuja Enterprise Agency",
+    "address": "Area 11, Garki, Abuja FCT",
+    "phone": "+234 9 234 5678",
+    "email": "contact@abujaenterprise.ng",
+    "website": "https://www.abujaenterprise.ng",
+    "image": "abujaEntreprise.jpg",
+    "membershipLevel": 2,
+    "otherInfo": "Supporting SMEs and entrepreneurship development in the FCT"
+  },
+  {
+    "name": "Ceddi Plaza",
+    "address": "Plot 264, Central Business District, Abuja",
+    "phone": "+234 9 413 6666",
+    "email": "info@ceddiplaza.com",
+    "website": "https://www.ceddiplaza.com",
+    "image": "ceddi.jpg",
+    "membershipLevel": 2,
+    "otherInfo": "Iconic shopping center serving Abuja since 2005"
+  },
+  {
+    "name": "Nile University of Nigeria",
+    "address": "Plot 681, Cadastral Zone C-00, Research & Institution Area, Abuja",
+    "phone": "+234 9 278 5555",
+    "email": "admissions@nileuniversity.edu.ng",
+    "website": "https://www.nileuniversity.edu.ng",
+    "image": "nile.jpg",
+    "membershipLevel": 1,
+    "otherInfo": "Leading private university fostering innovation and excellence"
+  },
+  {
+    "name": "Abuja City Gate Hotel",
+    "address": "Plot 656, Cadastral Zone B6, Central Business District",
+    "phone": "+234 9 461 7000",
+    "email": "reservations@citygateng.com",
+    "website": "https://www.citygateng.com",
+    "image": "cityHotel.jpg",
+    "membershipLevel": 1,
+    "otherInfo": "Four-star hospitality in the heart of Abuja"
+  }
+
+]
