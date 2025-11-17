@@ -115,38 +115,35 @@ function toggleView(view) {
 }
 
 // Event Listeners for View Toggle
-gridViewBtn.addEventListener("click", () => toggleView("grid"));
-listViewBtn.addEventListener("click", () => toggleView("list"));
+if (gridViewBtn && listViewBtn) {
+  gridViewBtn.addEventListener("click", () => toggleView("grid"));
+  listViewBtn.addEventListener("click", () => toggleView("list"));
+}
 
 // ============================================
-// HAMBURGER MENU TOGGLE
+// HAMBURGER MENU TOGGLE (WITH X ANIMATION)
 // ============================================
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
-
-  // Animate hamburger icon
-  const spans = hamburger.querySelectorAll("span");
-  if (navMenu.classList.contains("active")) {
-    spans[0].style.transform = "rotate(45deg) translateY(10px)";
-    spans[1].style.opacity = "0";
-    spans[2].style.transform = "rotate(-45deg) translateY(-10px)";
-  } else {
-    spans[0].style.transform = "none";
-    spans[1].style.opacity = "1";
-    spans[2].style.transform = "none";
-  }
+  hamburger.classList.toggle("active");
 });
 
 // Close menu when clicking outside
 document.addEventListener("click", (e) => {
   if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
     navMenu.classList.remove("active");
-    const spans = hamburger.querySelectorAll("span");
-    spans[0].style.transform = "none";
-    spans[1].style.opacity = "1";
-    spans[2].style.transform = "none";
+    hamburger.classList.remove("active");
   }
+});
+
+// Close menu when clicking a nav link
+const navLinks = document.querySelectorAll(".nav-menu a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
 });
 
 // ============================================
@@ -157,7 +154,9 @@ function updateFooterDates() {
   // Update current year
   const currentYearSpan = document.getElementById("currentYear");
   const currentYear = new Date().getFullYear();
-  currentYearSpan.textContent = currentYear;
+  if (currentYearSpan) {
+    currentYearSpan.textContent = currentYear;
+  }
 
   // Update last modified date
   const lastModifiedSpan = document.getElementById("lastModified");
@@ -169,10 +168,12 @@ function updateFooterDates() {
     hour: "2-digit",
     minute: "2-digit",
   };
-  lastModifiedSpan.textContent = lastModified.toLocaleDateString(
-    "en-US",
-    options
-  );
+  if (lastModifiedSpan) {
+    lastModifiedSpan.textContent = lastModified.toLocaleDateString(
+      "en-US",
+      options
+    );
+  }
 }
 
 // ============================================
@@ -181,14 +182,18 @@ function updateFooterDates() {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch and display members
-  fetchMembers();
+  if (directoryContainer) {
+    fetchMembers();
+  }
 
   // Update footer dates
   updateFooterDates();
 
   // Set default view or restore saved preference
-  const savedView = localStorage.getItem("viewPreference") || "grid";
-  toggleView(savedView);
+  if (gridViewBtn && listViewBtn) {
+    const savedView = localStorage.getItem("viewPreference") || "grid";
+    toggleView(savedView);
+  }
 
   // Add smooth scroll behavior
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
