@@ -433,13 +433,20 @@ form textarea {
 }
 
 .summary-item {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .summary-item strong {
     color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.summary-item span {
+    color: #666;
+    word-break: break-word;
+    font-size: 0.95rem;
 }
 
 .next-steps {
