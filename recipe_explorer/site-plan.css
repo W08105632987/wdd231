@@ -1,0 +1,485 @@
+/* ===============================================
+   SITE PLAN CSS - RECIPE EXPLORER
+   =============================================== */
+
+/* === CSS RESET & BASE STYLES === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Schema Variables */
+    --primary-color: #FF6B35;
+    --secondary-color: #4E6C50;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --border-color: #E0E0E0;
+
+    /* Typography Variables */
+    --display-font: 'Bebas Neue', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* === HEADER STYLES === */
+header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #3a5240 100%);
+    color: var(--background-color);
+    padding: var(--spacing-lg) var(--spacing-md);
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+header h1 {
+    font-family: var(--display-font);
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+}
+
+header .subtitle {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* === MAIN CONTENT === */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+section {
+    background-color: var(--background-color);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: var(--display-font);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: var(--spacing-xs);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+section h4 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+}
+
+section p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+/* === SITE NAME SECTION === */
+.site-name h3 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* === SCENARIOS SECTION === */
+.scenario-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.scenario-item {
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.scenario-item h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === COLOR SCHEMA SECTION === */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.color-card {
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-swatch {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    margin-bottom: var(--spacing-sm);
+    border: 2px solid var(--border-color);
+}
+
+.primary-color {
+    background-color: #FF6B35;
+}
+
+.secondary-color {
+    background-color: #4E6C50;
+}
+
+.text-color {
+    background-color: #333333;
+}
+
+.background-color {
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+}
+
+.color-card h4 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--secondary-color);
+}
+
+.color-code {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.color-usage {
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* === TYPOGRAPHY SECTION === */
+.font-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.font-example {
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.font-example h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.font-description {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sample-text {
+    background-color: var(--background-color);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    margin-top: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+}
+
+.display-font {
+    font-family: var(--display-font);
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.heading-font {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.body-font {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* === WIREFRAMES SECTION === */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.wireframe h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.wireframe-box {
+    background-color: var(--light-gray);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+/* Wireframe Elements */
+.wire-header,
+.wire-hero,
+.wire-section,
+.wire-cta,
+.wire-footer,
+.wire-card,
+.wire-grid {
+    background-color: var(--background-color);
+    border: 2px dashed var(--text-color);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.wire-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+}
+
+.wire-logo {
+    font-family: var(--display-font);
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.wire-hamburger {
+    font-size: 1.5rem;
+}
+
+.wire-nav {
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
+}
+
+.wire-hero {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: var(--spacing-lg);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.wire-hero-image {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(rgba(255, 107, 53, 0.3), rgba(78, 108, 80, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    margin-bottom: var(--spacing-sm);
+    border-radius: 4px;
+}
+
+.wire-hero-content {
+    line-height: 2;
+    z-index: 1;
+    text-align: center;
+    margin-top: auto;
+}
+
+.wire-heading {
+    font-family: var(--display-font);
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.wire-card {
+    background-color: var(--light-gray);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wire-button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 4px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wire-footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: var(--spacing-md);
+    border: none;
+}
+
+/* Desktop Wireframe Adjustments */
+.desktop-header {
+    padding: var(--spacing-md);
+}
+
+.desktop-hero {
+    min-height: 250px;
+}
+
+.wire-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+}
+
+.desktop-footer {
+    padding: var(--spacing-md);
+}
+
+/* Figma CTA Section */
+.figma-cta {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e8e8e8 100%);
+    border-radius: 8px;
+}
+
+.figma-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 8px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.figma-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(78, 108, 80, 0.4);
+}
+
+.figma-note {
+    margin-top: var(--spacing-md);
+    font-style: italic;
+    color: #666;
+}
+
+/* === FOOTER STYLES === */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+footer p {
+    font-family: var(--heading-font);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: var(--spacing-sm);
+    }
+
+    section {
+        padding: var(--spacing-sm);
+    }
+}

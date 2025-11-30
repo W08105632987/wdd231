@@ -1,0 +1,352 @@
+/* ============================================
+   DISCOVER.CSS - DISCOVER PAGE STYLES
+   ABUJA CHAMBER OF COMMERCE
+   ============================================ */
+
+/* ============================================
+   DISCOVER HEADER
+   ============================================ */
+
+.discover-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.discover-header h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.discover-header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   VISIT MESSAGE
+   ============================================ */
+
+.visit-message {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+    animation: slideInDown 0.5s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.visit-message.hidden {
+    display: none;
+}
+
+/* ============================================
+   PLACES GRID - MOBILE FIRST (320px - 640px)
+   Using CSS Grid Template Areas
+   ============================================ */
+
+.places-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "place5"
+        "place6"
+        "place7"
+        "place8";
+    gap: var(--spacing-lg);
+}
+
+.place-card:nth-child(1) {
+    grid-area: place1;
+}
+
+.place-card:nth-child(2) {
+    grid-area: place2;
+}
+
+.place-card:nth-child(3) {
+    grid-area: place3;
+}
+
+.place-card:nth-child(4) {
+    grid-area: place4;
+}
+
+.place-card:nth-child(5) {
+    grid-area: place5;
+}
+
+.place-card:nth-child(6) {
+    grid-area: place6;
+}
+
+.place-card:nth-child(7) {
+    grid-area: place7;
+}
+
+.place-card:nth-child(8) {
+    grid-area: place8;
+}
+
+/* ============================================
+   PLACE CARD STYLES
+   ============================================ */
+
+.place-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+/* Staggered Animation */
+.place-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.place-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.place-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.place-card:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.place-card:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.place-card:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.place-card:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.place-card:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.place-card h2 {
+    color: var(--primary-color);
+    padding: var(--spacing-md);
+    font-size: 1.3rem;
+    margin: 0;
+    background: var(--light-bg);
+}
+
+.place-card figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* NO hover effect on mobile */
+@media (max-width: 640px) {
+    .place-card img {
+        transition: none;
+    }
+}
+
+.place-card address {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-style: normal;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--light-bg);
+}
+
+.place-card address::before {
+    content: "📍";
+}
+
+.place-card p {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.place-card button {
+    width: calc(100% - 2 * var(--spacing-md));
+    margin: 0 var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.place-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 123, 180, 0.4);
+}
+
+/* Category Badge */
+.category-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: rgba(26, 77, 125, 0.9);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   MEDIUM SCREENS (641px - 1024px)
+   Grid Template Areas for 2-column layout
+   ============================================ */
+
+@media (min-width: 641px) {
+    .discover-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "place1 place2"
+            "place3 place4"
+            "place5 place6"
+            "place7 place8";
+        gap: var(--spacing-xl);
+    }
+
+    /* Image hover effects for medium screens and up */
+    .place-card img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Additional hover effects */
+    .place-card figure:hover img {
+        filter: brightness(1.1);
+    }
+}
+
+/* ============================================
+   LARGE SCREENS (1025px and above)
+   Grid Template Areas for 3-column layout
+   ============================================ */
+
+@media (min-width: 1025px) {
+    .discover-header h2 {
+        font-size: 3rem;
+    }
+
+    .places-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "place1 place2 place3"
+            "place4 place5 place6"
+            "place7 place8 place8";
+        gap: var(--spacing-xl);
+    }
+
+    /* Make last card span 2 columns for better balance */
+    .place-card:nth-child(8) {
+        grid-area: place8;
+    }
+
+    .place-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .place-card img {
+        height: 220px;
+    }
+
+    /* Enhanced hover effects for large screens */
+    .place-card:hover img {
+        transform: scale(1.15);
+    }
+
+    .place-card figure:hover img {
+        filter: brightness(1.15) saturate(1.2);
+    }
+}
+
+/* ============================================
+   LAZY LOADING STYLES
+   ============================================ */
+
+.place-card img[loading="lazy"] {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0e7ee 100%);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .place-card {
+        page-break-inside: avoid;
+    }
+}
