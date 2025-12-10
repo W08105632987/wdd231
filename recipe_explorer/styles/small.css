@@ -1,0 +1,122 @@
+/* ===============================================
+   SMALL.CSS - MOBILE-SPECIFIC OPTIMIZATIONS
+   Recipe Explorer Project
+   Applies to screens 768px and below
+   =============================================== */
+
+@media (max-width: 768px) {
+
+    /* === HERO SECTION MOBILE === */
+    .hero {
+        min-height: 400px;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
+        /* Preserve original image quality */
+        image-rendering: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+    }
+
+    .hero .btn {
+        font-size: 0.95rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* === EXTRA SMALL DEVICES === */
+    .hero {
+        min-height: 350px;
+        padding: 2rem 0.75rem;
+        margin-bottom: 1.5rem;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        /* Maintain image quality */
+        image-rendering: auto;
+    }
+
+    .hero-content {
+        padding: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 0.65rem 1.25rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* === SECTION SPACING === */
+    section {
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* === VERY SMALL DEVICES === */
+    .hero {
+        min-height: 320px;
+        padding: 1.5rem 0.5rem;
+        background-attachment: scroll;
+        background-position: center center;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    .hero .btn {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+}

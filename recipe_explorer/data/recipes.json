@@ -1,0 +1,272 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "image": "images/recipe1.jpg",
+      "time": "20 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "400g spaghetti",
+        "200g bacon or pancetta",
+        "4 large eggs",
+        "100g grated Parmesan cheese",
+        "2 cloves garlic, minced",
+        "Salt and black pepper to taste",
+        "Fresh parsley for garnish"
+      ],
+      "instructions": "Cook spaghetti according to package directions. In a large pan, cook bacon until crispy. Beat eggs with Parmesan cheese. Drain pasta, reserving 1 cup pasta water. Add hot pasta to bacon pan, remove from heat. Quickly stir in egg mixture, adding pasta water to create a creamy sauce. Season with salt and pepper. Serve immediately with extra Parmesan and parsley."
+    },
+    {
+      "id": 2,
+      "name": "Chicken Stir Fry",
+      "image": "images/recipe-2.jpg",
+      "time": "25 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "500g chicken breast, sliced",
+        "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+        "3 tbsp soy sauce",
+        "2 tbsp oyster sauce",
+        "1 tbsp sesame oil",
+        "2 cloves garlic, minced",
+        "1 tsp fresh ginger, grated",
+        "2 tbsp vegetable oil",
+        "Cooked rice for serving"
+      ],
+      "instructions": "Heat oil in a wok or large pan over high heat. Add chicken and cook until golden, about 5 minutes. Remove and set aside. Add vegetables, garlic, and ginger to the pan. Stir-fry for 3-4 minutes. Return chicken to pan. Add soy sauce, oyster sauce, and sesame oil. Toss everything together for 2 minutes. Serve hot over rice."
+    },
+    {
+      "id": 3,
+      "name": "Classic Caesar Salad",
+      "image": "images/recipe-3.jpg",
+      "time": "15 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 large romaine lettuce, chopped",
+        "1 cup croutons",
+        "1/2 cup grated Parmesan cheese",
+        "1/2 cup Caesar dressing",
+        "2 tbsp lemon juice",
+        "1 tsp Dijon mustard",
+        "2 anchovy fillets (optional)",
+        "Black pepper to taste"
+      ],
+      "instructions": "Wash and thoroughly dry lettuce, then chop into bite-sized pieces. In a large bowl, toss lettuce with Caesar dressing until evenly coated. Add croutons and half the Parmesan cheese. Toss gently. Transfer to serving plates and top with remaining Parmesan and freshly ground black pepper. For best results, serve immediately while croutons are still crunchy."
+    },
+    {
+      "id": 4,
+      "name": "Fluffy Pancakes",
+      "image": "images/recipe-4.jpg",
+      "time": "20 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1 tsp salt",
+        "2 large eggs",
+        "1 3/4 cups milk",
+        "1/4 cup melted butter",
+        "1 tsp vanilla extract",
+        "Butter and maple syrup for serving"
+      ],
+      "instructions": "In a large bowl, whisk together flour, sugar, baking powder, and salt. In another bowl, beat eggs, then add milk, melted butter, and vanilla. Pour wet ingredients into dry ingredients and stir until just combined (lumps are okay). Heat a griddle over medium heat and lightly grease. Pour 1/4 cup batter for each pancake. Cook until bubbles form on surface, then flip and cook until golden. Serve warm with butter and syrup."
+    },
+    {
+      "id": 5,
+      "name": "Perfect Grilled Cheese",
+      "image": "images/recipe-5.jpg",
+      "time": "10 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 slices bread",
+        "4 slices cheddar cheese",
+        "2 tbsp butter, softened",
+        "1 tsp garlic powder (optional)",
+        "Pinch of salt"
+      ],
+      "instructions": "Butter one side of each bread slice. Place two slices butter-side down in a pan over medium heat. Add two cheese slices to each. Top with remaining bread slices, butter-side up. Cook for 3-4 minutes until golden brown. Flip carefully and cook another 3-4 minutes until cheese is melted and both sides are golden. Cut diagonally and serve immediately."
+    },
+    {
+      "id": 6,
+      "name": "Easy Beef Tacos",
+      "image": "images/recipe-6.jpg",
+      "time": "20 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "500g ground beef",
+        "1 packet taco seasoning",
+        "8 taco shells",
+        "1 cup shredded lettuce",
+        "1 cup diced tomatoes",
+        "1 cup shredded cheddar cheese",
+        "1/2 cup sour cream",
+        "Salsa for serving"
+      ],
+      "instructions": "Brown ground beef in a large skillet over medium-high heat, breaking it up as it cooks. Drain excess fat. Add taco seasoning and water according to package directions. Simmer for 5 minutes. Warm taco shells according to package directions. Fill each shell with seasoned beef. Top with lettuce, tomatoes, cheese, and sour cream. Serve with salsa on the side."
+    },
+    {
+      "id": 7,
+      "name": "Vegetable Fried Rice",
+      "image": "images/recipe-7.jpg",
+      "time": "25 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "3 cups cooked rice (day-old works best)",
+        "2 cups mixed vegetables (peas, carrots, corn)",
+        "2 eggs, beaten",
+        "3 tbsp soy sauce",
+        "2 tbsp vegetable oil",
+        "2 green onions, chopped",
+        "2 cloves garlic, minced",
+        "1 tsp sesame oil"
+      ],
+      "instructions": "Heat 1 tbsp oil in a wok or large pan. Add beaten eggs and scramble until cooked. Remove and set aside. Add remaining oil, garlic, and vegetables. Stir-fry for 3-4 minutes. Add rice and break up any clumps. Add soy sauce and toss everything together. Return eggs to pan and mix well. Drizzle with sesame oil and garnish with green onions. Serve hot."
+    },
+    {
+      "id": 8,
+      "name": "Creamy Scrambled Eggs",
+      "image": "images/recipe-8.jpg",
+      "time": "10 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 large eggs",
+        "2 tbsp milk or cream",
+        "1 tbsp butter",
+        "Salt and pepper to taste",
+        "Fresh chives for garnish",
+        "Toast for serving"
+      ],
+      "instructions": "Crack eggs into a bowl and whisk with milk, salt, and pepper. Melt butter in a non-stick pan over medium-low heat. Pour in egg mixture. Let sit for 20 seconds, then gently stir with a spatula, pushing eggs from edges to center. Continue cooking and stirring gently until eggs are softly set but still slightly wet. Remove from heat (they'll continue cooking). Garnish with chives and serve immediately with toast."
+    },
+    {
+      "id": 9,
+      "name": "Mediterranean Veggie Wrap",
+      "image": "images/recipe-9.jpg",
+      "time": "15 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 large tortillas",
+        "1 cup hummus",
+        "1 cup mixed greens",
+        "1 cucumber, sliced",
+        "1 tomato, diced",
+        "1/2 cup feta cheese",
+        "1/4 cup black olives, sliced",
+        "2 tbsp olive oil",
+        "1 tsp lemon juice"
+      ],
+      "instructions": "Lay tortillas flat and spread 1/4 cup hummus on each. Layer greens, cucumber, tomato, feta, and olives in the center. Drizzle with olive oil and lemon juice. Fold in the sides of the tortilla, then roll tightly from bottom to top. Cut in half diagonally. Serve immediately or wrap in foil for later."
+    },
+    {
+      "id": 10,
+      "name": "Berry Smoothie Bowl",
+      "image": "images/recipe-10.jpg",
+      "time": "10 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 frozen bananas",
+        "1 cup frozen mixed berries",
+        "1/2 cup Greek yogurt",
+        "1/4 cup milk",
+        "1 tbsp honey",
+        "Granola for topping",
+        "Fresh berries for topping",
+        "Sliced almonds for topping"
+      ],
+      "instructions": "Add frozen bananas, berries, yogurt, milk, and honey to a blender. Blend on high until smooth and thick (you want it thicker than a regular smoothie). Pour into a bowl. Top with granola, fresh berries, and sliced almonds in sections for a beautiful presentation. Serve immediately with a spoon."
+    },
+    {
+      "id": 11,
+      "name": "Cheese Quesadilla",
+      "image": "images/recipe-11.jpg",
+      "time": "15 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 large flour tortillas",
+        "2 cups shredded cheese (cheddar, Monterey Jack, or mix)",
+        "1 bell pepper, diced",
+        "1/2 onion, diced",
+        "1 tbsp vegetable oil",
+        "Sour cream for serving",
+        "Salsa for serving"
+      ],
+      "instructions": "Sauté bell pepper and onion in oil until softened. Sprinkle cheese on half of each tortilla, add some vegetables, then fold tortilla in half. Heat a large pan over medium heat. Cook quesadilla for 2-3 minutes per side until golden and cheese is melted. Remove and let rest 1 minute. Cut into triangles. Serve with sour cream and salsa."
+    },
+    {
+      "id": 12,
+      "name": "Classic Tomato Soup",
+      "image": "images/recipe-12.jpg",
+      "time": "30 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cans (800g) crushed tomatoes",
+        "1 onion, diced",
+        "3 cloves garlic, minced",
+        "2 cups vegetable broth",
+        "1/2 cup heavy cream",
+        "2 tbsp olive oil",
+        "1 tsp sugar",
+        "Salt and pepper to taste",
+        "Fresh basil for garnish"
+      ],
+      "instructions": "Heat olive oil in a large pot. Sauté onion until soft, about 5 minutes. Add garlic and cook 1 minute. Add crushed tomatoes, broth, and sugar. Bring to a boil, then reduce heat and simmer 15 minutes. Use an immersion blender to puree until smooth (or transfer to regular blender in batches). Stir in cream and season with salt and pepper. Serve hot with fresh basil and a grilled cheese sandwich."
+    },
+    {
+      "id": 13,
+      "name": "Burrito Bowl",
+      "image": "images/recipe-13.jpg",
+      "time": "25 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 cups cooked rice",
+        "1 can black beans, drained",
+        "1 cup corn kernels",
+        "1 avocado, sliced",
+        "1 cup cherry tomatoes, halved",
+        "1/2 cup shredded cheese",
+        "1/4 cup sour cream",
+        "Lime wedges",
+        "Cilantro for garnish",
+        "Your choice of protein (chicken, beef, or tofu)"
+      ],
+      "instructions": "Cook your choice of protein and season with taco seasoning or cumin and chili powder. Warm rice, beans, and corn separately. Assemble bowls by dividing rice among serving bowls. Top with beans, corn, cooked protein, tomatoes, avocado, and cheese. Add a dollop of sour cream, squeeze of lime, and fresh cilantro. Mix everything together when eating."
+    },
+    {
+      "id": 14,
+      "name": "Italian Pasta Salad",
+      "image": "images/recipe-14.jpg",
+      "time": "20 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "400g pasta (rotini or penne)",
+        "1 cup cherry tomatoes, halved",
+        "1 cup mozzarella balls",
+        "1/2 cup black olives, sliced",
+        "1/4 cup red onion, diced",
+        "1/3 cup Italian dressing",
+        "2 tbsp fresh basil, chopped",
+        "Salt and pepper to taste"
+      ],
+      "instructions": "Cook pasta according to package directions. Drain and rinse with cold water to cool. In a large bowl, combine cooled pasta, tomatoes, mozzarella, olives, and onion. Pour Italian dressing over and toss well. Add fresh basil and season with salt and pepper. Refrigerate for at least 1 hour before serving to let flavors blend. Serve cold."
+    },
+    {
+      "id": 15,
+      "name": "Avocado Toast",
+      "image": "images/recipe-15.jpg",
+      "time": "10 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "2 slices whole grain bread",
+        "1 ripe avocado",
+        "1 tbsp lemon juice",
+        "Salt and pepper to taste",
+        "Red pepper flakes (optional)",
+        "1 egg (optional)",
+        "Cherry tomatoes for topping (optional)"
+      ],
+      "instructions": "Toast bread until golden and crispy. While bread toasts, mash avocado in a bowl with lemon juice, salt, and pepper. Spread mashed avocado generously on toasted bread. Optional: top with a fried or poached egg, cherry tomato halves, and red pepper flakes. Serve immediately while toast is still warm and crispy."
+    }
+  ]
+}

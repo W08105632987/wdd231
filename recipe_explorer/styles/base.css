@@ -1,0 +1,288 @@
+/* ===============================================
+   BASE.CSS - FOUNDATION STYLES
+   Recipe Explorer Project
+   =============================================== */
+
+/* === GOOGLE FONTS IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* === CSS RESET === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ROOT VARIABLES === */
+:root {
+    /* Color Palette */
+    --primary-color: #FF6B35;
+    --primary-hover: #E85A28;
+    --secondary-color: #4E6C50;
+    --secondary-hover: #3A5240;
+    --text-color: #333333;
+    --text-light: #666666;
+    --background-color: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --border-color: #E0E0E0;
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Font Sizes */
+    --fs-hero: 4rem;
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.8rem;
+    --fs-h4: 1.4rem;
+    --fs-body: 1rem;
+    --fs-small: 0.875rem;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+
+    /* Layout */
+    --max-width: 1200px;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* === BASE TYPOGRAPHY === */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === HEADINGS === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+/* Display Font for Special Headers */
+.display-heading {
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* === PARAGRAPHS & TEXT === */
+p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* === LISTS === */
+ul,
+ol {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+}
+
+li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* === IMAGES === */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === BUTTONS === */
+button,
+.btn {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    color: var(--background-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(78, 108, 80, 0.3);
+}
+
+/* === FORMS === */
+input,
+textarea,
+select {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    padding: var(--spacing-sm);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+    transition: var(--transition);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color);
+}
+
+/* === UTILITY CLASSES === */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: var(--spacing-sm);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-md);
+}
+
+.mt-3 {
+    margin-top: var(--spacing-lg);
+}
+
+.mb-1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* === ACCESSIBILITY === */
+:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* === RESPONSIVE TYPOGRAPHY === */
+@media (max-width: 768px) {
+    :root {
+        --fs-hero: 3rem;
+        --fs-h1: 2.5rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.5rem;
+        --fs-h4: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --fs-hero: 2.5rem;
+        --fs-h1: 2rem;
+        --fs-h2: 1.75rem;
+        --fs-h3: 1.3rem;
+        --fs-h4: 1.1rem;
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+    }
+}
