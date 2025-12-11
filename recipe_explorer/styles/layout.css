@@ -140,6 +140,7 @@ nav ul li a:hover {
     background-color: var(--text-color);
 }
 
+
 /* === HERO SECTION === */
 .hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),

@@ -127,12 +127,8 @@ function initContactForm() {
   console.log("Contact form initialized");
 }
 
-// === DISPLAY SUBMISSION DATA ON THANKS PAGE (URLSearchParams) ===
-/* VIDEO DEMO: URLSearchParams in action
-   - Show window.location.search containing form data
-   - Show params.get() retrieving specific values
-   - Demonstrate how data appears on thanks.html
-*/
+
+
 function displaySubmissionData() {
   // Check if we're on the thanks page
   if (!window.location.pathname.includes("thanks.html")) return;

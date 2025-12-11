@@ -116,7 +116,7 @@ function displayLastViewed() {
     const message = `Welcome back! Last viewed: ${lastViewed.name}`;
     console.log(message);
 
-    // You can add a UI element to display this if needed
+    
   }
 }
 
